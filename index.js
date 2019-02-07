@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import { WebView, View, ActivityIndicator, Platform, StyleSheet } from 'react-native'
 import { FileSystem } from 'expo'
-import { Constants } from 'expo';
 
 const {
   cacheDirectory,
@@ -76,7 +75,6 @@ const Loader = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
   },
   webview: {
